@@ -1,0 +1,91 @@
+#jeden {
+    width: 60%;
+    margin-top: 2%;
+    margin-left: 20% ;
+    margin-right: 20%;
+    background-color: white;
+}
+.margin{
+    margin-left: 10% ;
+}
+p#p{
+    margin: 0%;
+    margin-left: 1%;
+    
+}
+p{
+    color:black;
+    margin-left: 10% ;
+    margin-right: 10%;
+}
+h3{
+    margin-left: 10% ;
+    margin-right: 10%;
+    color:blue ;
+}
+p#godz{
+    color:black;
+    margin:1%;
+}
+div#kalendarz{
+    width: 35%;
+}
+div#godzina{
+    margin-left:5%;
+    width: 50%;
+}
+div#wizyty{
+    width: 100%;
+    margin-left:10%;
+    margin-right:10%;
+}
+div#email{
+    width:100%;
+}
+div#telefon{
+    width:100%;
+}
+#submit{
+    text-align: center;
+    border: blue solid 2.5px;
+    width:25%;
+    height: 50px;
+    margin-top:1%;
+    margin-bottom:40px;
+}
+.czternascie{
+    text-align: center;
+    width:20%;
+    height: 22px;
+    margin:1%;
+    border: gray solid 1px;
+    float:left;
+}
+.zaznaczony{
+    text-align: center;
+    width:20%;
+    height: 22px;
+    margin:1%;
+    border: gray solid 1px;
+    float:left;
+    background-color: green;
+}
+.zaznaczony:hover{
+    background-color:greenyellow;
+    cursor: pointer;
+}
+.czternascie:hover{
+    background-color: greenyellow;
+    cursor: pointer;
+}
+#czternascie:hover{
+    background-color: greenyellow;
+    cursor: pointer;
+}
+@media(min-width:1600px){
+    #jeden{
+        margin-left:30%;
+        margin-right:30;
+        width: 37%;
+    }
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz</title>
+    <script src="scripts/jquery-3.5.1.min.js"></script>
+    <script src="scripts/index.js"></script>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body style="background-color: gray;">
+
+   <div id="jeden">
+
+        <br>
+        
+       <h3>Dane Pacjenta</h3>
+
+       <p>Imie i nazwisko:</p>
+
+       <input class="margin" type="text" required>
+
+       <p>E-mail:</p>
+
+       <div id="email">
+
+       <input style="float:left;" class="margin" type="email"><p style="float:left;color:gray;" id="p"> Opcjonalnie</p>
+        </div>
+
+        <br style="clear:both;">
+
+        <p>Telefon:</p>
+
+       <div id="telefon">
+
+       <input style="float:left;" class="margin" type="tel"><p style="float:left; color:gray;" id="p" requried>W celu szybkiego kontaktu</p>
+
+       </div> 
+       <br>
+       <h3 style="clear:both;">Jaki specjalista?</h3>
+
+       <form action="index.php">
+           
+        <input style="margin-left:10%;" type="radio" name="Specjalista" value="Ortopeda" onClick="zmien(value);" checked> Ortopeda
+        <input style="margin-left:3%;" type="radio" name="Specjalista" value="Chirurg" onClick="zmien(value);"> Chirurg
+        <input style="margin-left:3%;" type="radio" name="Specjalista" value="Ginekolog" onClick="zmien(value);"> Ginekolog
+        <input style="margin-left:3%;" type="radio" name="Specjalista" value="Urolog" onClick="zmien(value);"> Urolog
+        <input style="margin-left:3%;" type="radio" name="Specjalista" value="Kardiolog" onClick="zmien(value);"> Kardiolog
+        <input style="margin-left:3%;" type="radio" name="Specjalista" value="Onkolog" onClick="zmien(value);"> Onkolog
+       </form>
+       <h3>Termin wizyty</h3>
+
+       <div id="wizyty">
+
+           <div style="float:left;" id="kalendarz"> 
+            
+            <img src="https://cdn.discordapp.com/attachments/336868248844894212/778005442100985876/unknown.png" alt=""> </div>
+           <div style="float:left;" id="godzina">
+
+               <b><p id="godz">Godzina:</p></b>
+
+               <div>
+
+                <div id="1" class="czternascie" onClick="wybierz(id);">13:00</div>
+                <div id="2" class="czternascie" onClick="wybierz(id);">13:30</div>
+                <div id="3" class="czternascie" onClick="wybierz(id);">14:00</div>
+                <div id="4" class="czternascie" onClick="wybierz(id);">14:30</div>
+                <div id="5" class="czternascie" onClick="wybierz(id);">15:00</div>
+                <div id="6" class="czternascie" onClick="wybierz(id);">15:30</div>
+                <div id="7" class="czternascie" onClick="wybierz(id);">16:00</div>
+                <div id="8" class="czternascie" onClick="wybierz(id);">16:30</div>
+                <div id="9" class="czternascie" onClick="wybierz(id);">17:00</div>
+                <div id="10" class="czternascie" onClick="wybierz(id);">17:30</div>
+                <div id="11" class="czternascie" onClick="wybierz(id);">18:00</div>
+                <div id="12" class="czternascie" onClick="wybierz(id);">18:30</div>
+                <div id="13" class="czternascie" onClick="wybierz(id);">19:00</div>
+                <div id="14" class="czternascie" onClick="wybierz(id);">19:30</div>
+
+               </div>
+
+           </div>
+
+       </div>
+       <br style="clear:both;">
+       <div style="text-align: center;">
+       <p style="color:gray;font-size:15px;">Twoja wizyta</p>
+
+       <h3 id="end"></h3>
+       <br>
+       <button type="submit" id="submit" style="background-image: url(unknown.png);background-position: center;" onClick="alerts();"></button>
+    </div>
+   </div>
+
+</body>
+
+</html>
